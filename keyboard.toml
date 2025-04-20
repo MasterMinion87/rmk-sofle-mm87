@@ -18,7 +18,7 @@ cols = 6
 row_offset = 0
 col_offset = 0
 
-ble_address = [0x11, 0x11, 0x11, 0x11, 0x11, 0x11] # Dummy address
+ble_addr = [0x11, 0x11, 0x11, 0x11, 0x11, 0x11] # Dummy address
 
 [split.central.matrix]
 matrix_type = "normal"
@@ -31,7 +31,7 @@ cols = 7
 row_offset = 0
 col_offset = 6
 
-ble_address = [0x22, 0x11, 0x11, 0x11, 0x11, 0x11] # Dummy address
+ble_addr = [0x22, 0x11, 0x11, 0x11, 0x11, 0x11] # Dummy address
 
 [split.peripheral.matrix]
 matrix_type = "normal"
