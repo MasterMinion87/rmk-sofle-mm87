@@ -86,3 +86,15 @@ No No No No No No No No No No No No No
 [storage]
 # Storage feature is enabled by default
 # enabled = false
+
+# Nota para MasterMinion87:
+# El direccionamiento de memoria del nRF52840 especifica la memoria flash como la región comprendida entre las direcciones 0x0 y 0x00800000 (En esta dirección comienza la RAM).
+
+# La dirección 0x00026000 correspondería con el comienzo de la página 38 de la flash (creo) y es un valor, en principio y con sus detalles, arbitrario.
+start_addr = 0x00026000
+
+# Aquí se indica la cantidad de páginas de la memoria flash que el firmware podrá usar para guardar información (como el layout, ajustes del vial, dispositivos bluetooth, etc).
+# Con 6 páginas, en principio, debería ser suficiente.
+num_sectors = 6
+
+clear_storage = false
